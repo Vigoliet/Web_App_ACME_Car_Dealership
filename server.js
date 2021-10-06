@@ -5,22 +5,12 @@ const router = require('./routes');
 const app = express();
 const PORT = process.env.PORT || 8042;
 const indexRouter = require('./routes/index');
-const carsRouter = require('./routes/cars');
+//const carsRouter = require('./routes/cars');
 
 app.use(express.static('public'));
 
-app.use('/', indexRouter);
+app.use('/', indexRouter); // express sets content type
 //app.use('/cars', carsRouter);
-
-
-//app.get('/', (req, res) => {
-
-//    fs.readFile('public/app.html', (err, data) => {
-//        res.setHeader('Content-Type', 'text/html');
-//        res.send(data);
-//    });
-
-//});
 
 app.listen(PORT, () => {
     console.log(`Example app listening at http://localhost:${PORT}`);
