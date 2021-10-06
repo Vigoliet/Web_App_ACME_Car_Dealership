@@ -1,6 +1,6 @@
 exports.index = (req, res) => {
 
     
-    res.sendFile('public/data/index.html');
+    res.sendfile('public/data/index.html');
  
 };
