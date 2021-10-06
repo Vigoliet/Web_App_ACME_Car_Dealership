@@ -10,7 +10,7 @@ const carsRouter = require('./routes/cars');
 app.use(express.static('public'));
 
 app.use('/', indexRouter);
-app.use('/cars', carsRouter);
+//app.use('/cars', carsRouter);
 
 
 //app.get('/', (req, res) => {
